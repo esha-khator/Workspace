@@ -37,7 +37,7 @@ const Result = ({ inputValue }) => {
         <>
             {shortenLink && (
                 <div className ='resultContainer'> 
-                    <p>Your link: {shortenLink}</p>
+                    <p>Your link: <a className='App-link'>{shortenLink}</a></p>
                 </div>
             )}
         </>

@@ -1,5 +1,7 @@
 import React from 'react'
 import { useState } from 'react';
+import Typography from '@material-ui/core/Typography'
+import Button from '@mui/material/Button';
 
 const Input = ({setInputValue}) => {
     const [value, setValue] = useState("");
@@ -17,8 +19,8 @@ const Input = ({setInputValue}) => {
                 value={value}
                 onChange={e => setValue(e.target.value)}
                 />
-                <button onClick={handleClick}>
-                    Shorten</button>
+                <Button variant="contained" onClick={handleClick}>
+                    Shorten</Button>
             </div>
         </div>
     )
